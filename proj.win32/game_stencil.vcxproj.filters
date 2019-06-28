@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{b18c9c0e-850c-4f59-a716-7680bdd5fdb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{838c4812-570c-45f1-9341-15c8d045392d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Config">
+      <UniqueIdentifier>{3e851d71-0397-45c2-965a-9cfb14b90ad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Scenes">
+      <UniqueIdentifier>{649ba540-06ff-450f-a763-9b3e6cd9e034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Sprites">
+      <UniqueIdentifier>{907e4ba7-e425-4e96-9302-47d7f2e9dfac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\mxml-2.9">
+      <UniqueIdentifier>{d514340d-61b6-4e8b-a44a-f5e8ac2b11d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\config">
+      <UniqueIdentifier>{b12cdb22-ee90-4e08-9040-cd8d4c40ae61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\res">
+      <UniqueIdentifier>{35d62c10-d433-49c4-9601-5f49db4b3347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\res\iphone">
+      <UniqueIdentifier>{3a09597d-c129-4e35-a15c-acdcba8d9907}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-attr.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxmldoc.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-entity.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-file.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-get.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-index.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-node.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-private.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-search.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-set.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-string.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\mxml-2.9\config.h">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\mxml-2.9\mxml.h">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\mxml-2.9\mxml-private.h">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Config\GLViewConfig.h">
+      <Filter>Classes\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Config\ResolutionConfig.h">
+      <Filter>Classes\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Config\XmlConfigUtil.h">
+      <Filter>Classes\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Config\SceneConfig.h">
+      <Filter>Classes\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Config\SceneMapConfig.h">
+      <Filter>Classes\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Config\ApplicationConfig.h">
+      <Filter>Classes\Config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Resources\config\ApplicationConfig.xml">
+      <Filter>resource\config</Filter>
+    </Xml>
+    <Xml Include="..\Resources\res\iphone\GameOverScreenConfig.xml">
+      <Filter>resource\res\iphone</Filter>
+    </Xml>
+    <Xml Include="..\Resources\res\iphone\MainMenuScreenConfig.xml">
+      <Filter>resource\res\iphone</Filter>
+    </Xml>
+    <Xml Include="..\Resources\res\iphone\PauseScreenConfig.xml">
+      <Filter>resource\res\iphone</Filter>
+    </Xml>
+    <Xml Include="..\Resources\res\iphone\ShopScreenConfig.xml">
+      <Filter>resource\res\iphone</Filter>
+    </Xml>
+    <Xml Include="..\Resources\res\iphone\PlayGameScreenConfig.xml">
+      <Filter>resource\res\iphone</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

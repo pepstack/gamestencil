@@ -1,0 +1,22 @@
+
+
+2016-06-07
+---------------------
+(1) game config xml => (2) game database => (3) game resources
+
+
+(1) game config xml
+
+develop:
+    format: plain
+    
+    
+product:
+    format encoded
+    
+    http://svn.nexusformat.org/third-party/trunk/Mini-XML/mxml-2.6/doc/basics.html
+
+
+    xmlencode: Encode a plain game config xml to an encrypted one.
+
+    xmldecode: Decode an encrypted game config xml file to xml string.

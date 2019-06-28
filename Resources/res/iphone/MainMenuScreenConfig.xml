@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cc:SceneConfig xmlns:cc="http://www.cocos2d-x.org">
+    <cc:MenuGroup>
+        <cc:MenuItemImage Id="GameCaption">
+            <Normal></Normal>
+            <Selected></Selected>
+            <Disabled></Disabled>
+        </cc:MenuItemImage>
+        <cc:MenuItemImage Id="PlayGame">
+            <Normal></Normal>
+            <Selected></Selected>
+            <Disabled></Disabled>
+        </cc:MenuItemImage>
+        <cc:MenuItemImage Id="ExitGame">
+            <Normal></Normal>
+            <Selected></Selected>
+            <Disabled></Disabled>
+        </cc:MenuItemImage>
+    </cc:MenuGroup>
+</cc:SceneConfig>

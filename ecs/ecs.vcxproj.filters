@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="model">
+      <UniqueIdentifier>{f116036e-08fc-49bb-801e-c766311b87c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\system">
+      <UniqueIdentifier>{061a726f-a731-4057-9946-04d94bab423c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\entity">
+      <UniqueIdentifier>{1b83291f-b168-4ee9-800a-97f6146544d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\component">
+      <UniqueIdentifier>{1c0288f9-a13d-4482-9e0a-dc799e36228f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{c782c617-e3a3-4176-aaed-3151e20b0678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\core">
+      <UniqueIdentifier>{d2e77397-696e-4f5d-b28f-872f15c15af2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\interface">
+      <UniqueIdentifier>{3af148e6-b260-4e16-bd9b-314dc7973ad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\component\interface">
+      <UniqueIdentifier>{c8f36459-de89-4d29-8388-d7cc8ca0d750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{998ff13f-650f-436d-8d12-43f95da1d8d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\mxml-2.9">
+      <UniqueIdentifier>{82f17977-c42e-40a1-8291-de9569825019}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\hashmap.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="model\system\RenderSystem.cpp">
+      <Filter>model\system</Filter>
+    </ClCompile>
+    <ClCompile Include="model\entity\EntityImpl.cpp">
+      <Filter>model\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="model\system\AbstractSystemImpl.cpp">
+      <Filter>model\system</Filter>
+    </ClCompile>
+    <ClCompile Include="model\component\AbstractComponentImpl.cpp">
+      <Filter>model\component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\red_black_tree.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="model\GameStencil.cpp">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="model\SystemMgmt.cpp">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="model\EntityMgmt.cpp">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-attr.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-entity.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-file.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-get.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-index.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-node.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-private.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-search.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-set.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-string.c">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="model\system\InputSystem.h">
+      <Filter>model\system</Filter>
+    </ClInclude>
+    <ClInclude Include="model\component\AnimateComponent.h">
+      <Filter>model\component</Filter>
+    </ClInclude>
+    <ClInclude Include="model\component\CollisionComponent.h">
+      <Filter>model\component</Filter>
+    </ClInclude>
+    <ClInclude Include="model\component\EntityTypeComponent.h">
+      <Filter>model\component</Filter>
+    </ClInclude>
+    <ClInclude Include="model\component\HealthComponent.h">
+      <Filter>model\component</Filter>
+    </ClInclude>
+    <ClInclude Include="model\component\PositionComponent.h">
+      <Filter>model\component</Filter>
+    </ClInclude>
+    <ClInclude Include="model\component\RenderComponent.h">
+      <Filter>model\component</Filter>
+    </ClInclude>
+    <ClInclude Include="model\component\VelocityComponent.h">
+      <Filter>model\component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\hashmap.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\red_black_tree.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\byteorder.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\dhlist.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="model\core\SIPtr.h">
+      <Filter>model\core</Filter>
+    </ClInclude>
+    <ClInclude Include="model\core\Platform.h">
+      <Filter>model\core</Filter>
+    </ClInclude>
+    <ClInclude Include="model\core\Universal.h">
+      <Filter>model\core</Filter>
+    </ClInclude>
+    <ClInclude Include="model\GameStencil.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="model\SystemMgmt.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="model\interface\IComponent.h">
+      <Filter>model\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="model\interface\IEntity.h">
+      <Filter>model\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="model\interface\IGameStencil.h">
+      <Filter>model\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="model\interface\ISystem.h">
+      <Filter>model\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="model\interface\ISystemMgmt.h">
+      <Filter>model\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="model\system\AbstractSystemImpl.h">
+      <Filter>model\system</Filter>
+    </ClInclude>
+    <ClInclude Include="model\system\AnimateSystem.h">
+      <Filter>model\system</Filter>
+    </ClInclude>
+    <ClInclude Include="model\system\BoundaryCheckSystem.h">
+      <Filter>model\system</Filter>
+    </ClInclude>
+    <ClInclude Include="model\system\CollisionDetectSystem.h">
+      <Filter>model\system</Filter>
+    </ClInclude>
+    <ClInclude Include="model\system\HealthSystem.h">
+      <Filter>model\system</Filter>
+    </ClInclude>
+    <ClInclude Include="model\system\MovementSystem.h">
+      <Filter>model\system</Filter>
+    </ClInclude>
+    <ClInclude Include="model\system\RenderSystem.h">
+      <Filter>model\system</Filter>
+    </ClInclude>
+    <ClInclude Include="model\system\CreatorSystem.h">
+      <Filter>model\system</Filter>
+    </ClInclude>
+    <ClInclude Include="model\interface\IEntityMgmt.h">
+      <Filter>model\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="model\EntityMgmt.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="model\entity\EntityImpl.h">
+      <Filter>model\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="model\component\AbstractComponentImpl.h">
+      <Filter>model\component</Filter>
+    </ClInclude>
+    <ClInclude Include="model\component\interface\IMoveable.h">
+      <Filter>model\component\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="model\component\interface\IHealth.h">
+      <Filter>model\component\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="model\component\interface\IRenderable.h">
+      <Filter>model\component\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="model\component\ComponentInterfaceMap.h">
+      <Filter>model\component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\mxml-2.9\config.h">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\mxml-2.9\mxml.h">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\mxml-2.9\mxml-private.h">
+      <Filter>thirdparty\mxml-2.9</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

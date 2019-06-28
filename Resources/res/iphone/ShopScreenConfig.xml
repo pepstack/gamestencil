@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cc:SceneConfig xmlns:cc="http://www.cocos2d-x.org">
+    <cc:MenuItemImage Id="Resume">
+        <Normal></Normal>
+        <Selected></Selected>
+        <Disabled></Disabled>
+    </cc:MenuItemImage>
+    <cc:MenuItemImage Id="MainMenu">
+        <Normal></Normal>
+        <Selected></Selected>
+        <Disabled></Disabled>
+    </cc:MenuItemImage>
+</cc:SceneConfig>

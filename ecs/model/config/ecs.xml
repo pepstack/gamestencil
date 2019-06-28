@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ecs-stencil>
+    <!--
+        sys:  system - s
+        comp: component - c
+        ent:  entity - e
+    -->
+    <sys-map>
+        <sys id="1" class="BoundaryCheckSystem" priority="800">
+        </sys>
+        <sys id="2" class="CollisionDetectSystem" priority="700">
+        </sys>
+        <sys id="3" class="AnimateSystem" priority="600">
+        </sys>
+        <sys id="4" class="InputSystem" priority="500">
+        </sys>
+        <sys id="5" class="CreatorSystem" priority="400">
+        </sys>
+        <sys id="6" class="HealthSystem" priority="300">
+        </sys>
+        <sys id="7" class="MovementSystem" priority="200">
+        </sys>
+        <sys id="8" class="RenderSystem" priority="100">
+        </sys>
+        <sys id="9" class="AudioSystem" priority="0">
+        </sys>
+    </sys-map>
+    <comp-map>
+        <comp id="1" class="AnimateComponent">
+            <ref-sys id="3" />
+            <ref-sys id="8" />
+        </comp>
+        <comp id="2" class="CollisionComponent">
+            <ref-sys id="3" />
+            <ref-sys id="8" />
+        </comp>
+        <comp id="3" class="EntityTypeComponent">
+            <ref-sys id="3" />
+            <ref-sys id="8" />
+        </comp>
+        <comp id="4" class="HealthComponent">
+            <ref-sys id="3" />
+            <ref-sys id="8" />
+        </comp>
+        <comp id="5" class="PositionComponent">
+            <ref-sys id="3" />
+            <ref-sys id="8" />
+        </comp>
+        <comp id="6" class="RenderComponent">
+            <ref-sys id="3" />
+            <ref-sys id="8" />
+        </comp>
+        <comp id="7" class="VelocityComponent">
+            <ref-sys id="3" />
+            <ref-sys id="8" />
+        </comp>
+    </comp-map>
+    <ent-map>
+        <ent class="Entity" name="A">
+            <ref-comp>
+            </ref-comp>
+            <ref-comp>
+            </ref-comp>
+            <ref-comp>
+            </ref-comp>
+        </ent>
+        <ent class="Entity" name="B">
+            <ref-comp>
+            </ref-comp>
+            <ref-comp>
+            </ref-comp>
+            <ref-comp>
+            </ref-comp>
+        </ent>
+        <ent class="Entity" name="C">
+            <ref-comp>
+            </ref-comp>
+            <ref-comp>
+            </ref-comp>
+            <ref-comp>
+            </ref-comp>
+        </ent>
+        <ent class="Entity" name="D">
+            <comp>
+            </comp>
+            <comp>
+            </comp>
+        </ent>
+    </ent-map>
+<ecs-stencil>

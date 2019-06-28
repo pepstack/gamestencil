@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stage-map>
+    <stage id="1">
+    </stage>
+    <stage id="2">
+    </stage>
+    
+    <actor uid="test001" >
+
+    </actor>
+
+    
+</stage-map>

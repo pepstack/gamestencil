@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BEE0D4B1-824B-471A-83AF-C11E905B7421}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ecs</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\hashmap.c" />
+    <ClCompile Include="..\common\red_black_tree.c" />
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-attr.c" />
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-entity.c" />
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-file.c" />
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-get.c" />
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-index.c" />
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-node.c" />
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-private.c" />
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-search.c" />
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-set.c" />
+    <ClCompile Include="..\thirdparty\mxml-2.9\mxml-string.c" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="model\component\AbstractComponentImpl.cpp" />
+    <ClCompile Include="model\EntityMgmt.cpp" />
+    <ClCompile Include="model\entity\EntityImpl.cpp" />
+    <ClCompile Include="model\GameStencil.cpp" />
+    <ClCompile Include="model\SystemMgmt.cpp" />
+    <ClCompile Include="model\system\AbstractSystemImpl.cpp" />
+    <ClCompile Include="model\system\RenderSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\byteorder.h" />
+    <ClInclude Include="..\common\dhlist.h" />
+    <ClInclude Include="..\common\hashmap.h" />
+    <ClInclude Include="..\common\red_black_tree.h" />
+    <ClInclude Include="..\thirdparty\mxml-2.9\config.h" />
+    <ClInclude Include="..\thirdparty\mxml-2.9\mxml-private.h" />
+    <ClInclude Include="..\thirdparty\mxml-2.9\mxml.h" />
+    <ClInclude Include="model\component\AbstractComponentImpl.h" />
+    <ClInclude Include="model\component\AnimateComponent.h" />
+    <ClInclude Include="model\component\CollisionComponent.h" />
+    <ClInclude Include="model\component\EntityTypeComponent.h" />
+    <ClInclude Include="model\component\HealthComponent.h" />
+    <ClInclude Include="model\component\ComponentInterfaceMap.h" />
+    <ClInclude Include="model\component\interface\IHealth.h" />
+    <ClInclude Include="model\component\interface\IMoveable.h" />
+    <ClInclude Include="model\component\interface\IRenderable.h" />
+    <ClInclude Include="model\component\PositionComponent.h" />
+    <ClInclude Include="model\component\RenderComponent.h" />
+    <ClInclude Include="model\component\VelocityComponent.h" />
+    <ClInclude Include="model\core\Platform.h" />
+    <ClInclude Include="model\core\SIPtr.h" />
+    <ClInclude Include="model\core\Universal.h" />
+    <ClInclude Include="model\EntityMgmt.h" />
+    <ClInclude Include="model\entity\EntityImpl.h" />
+    <ClInclude Include="model\GameStencil.h" />
+    <ClInclude Include="model\interface\IComponent.h" />
+    <ClInclude Include="model\interface\IEntity.h" />
+    <ClInclude Include="model\interface\IEntityMgmt.h" />
+    <ClInclude Include="model\interface\IGameStencil.h" />
+    <ClInclude Include="model\interface\ISystem.h" />
+    <ClInclude Include="model\interface\ISystemMgmt.h" />
+    <ClInclude Include="model\SystemMgmt.h" />
+    <ClInclude Include="model\system\AnimateSystem.h" />
+    <ClInclude Include="model\system\BoundaryCheckSystem.h" />
+    <ClInclude Include="model\system\CollisionDetectSystem.h" />
+    <ClInclude Include="model\system\CreatorSystem.h" />
+    <ClInclude Include="model\system\HealthSystem.h" />
+    <ClInclude Include="model\system\InputSystem.h" />
+    <ClInclude Include="model\system\AbstractSystemImpl.h" />
+    <ClInclude Include="model\system\MovementSystem.h" />
+    <ClInclude Include="model\system\RenderSystem.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

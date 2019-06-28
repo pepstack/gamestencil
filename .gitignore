@@ -1,0 +1,105 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.o
+*.a
+*.so
+*.pyc
+
+
+#--------------------------
+# ignored files for vc++
+#--------------------------
+UpgradeLog.XML
+~*
+*~
+*.7z
+*.a
+*.aps
+*.clw
+*.dll
+*.dsp
+*.dsw
+*.exe
+*.exp
+*.lastbuildstate
+*.lib
+*.log
+*.tlog
+*.ilk
+*.ncb
+*.obj
+*.opensdf
+*.pdb
+*.rar
+*.res
+*.sdf
+*.suo
+*.user
+*.zip
+
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+*.tmp
+~*
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+*.db
+.svn
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# cocos2d #
+###########
+
+# proj.android
+proj.android/bin/
+proj.android/libs/
+proj.android/obj/
+
+# proj.win32
+proj.win32/Debug.win32
+proj.win32/debug.win32
+proj.win32/Release.win32
+proj.win32/release.win32
+
+cocos2d/
+bin/
+Debug/
+Release/
+*.tlog/
+
+# TODO:
+# proj.android_studio
+
+# proj.win10
+
+# proj.linux
+
+# proj.ios_mac
+

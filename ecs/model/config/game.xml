@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game>
+    <model-config>
+        <ecs>ecs.xml</ecs>
+        <level>level.xml</level>
+    </model-config>
+
+    
+</game>

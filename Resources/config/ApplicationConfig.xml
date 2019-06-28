@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cc:Application xmlns:cc="http://www.cocos2d-x.org" Version="0.0.2">
+    <cc:GLView Name="game_stencil" FrameWidth="320" FrameHeight="480" FPS="60" DisplayStats="true">
+        <cc:DesignResolution Id="ipadhd" Width="1536" Height="2048" Policy="NoBorder" Descr="retina iPad">
+            <cc:SearchPaths>ipadhd,ipad,iphonehd5,iphonehd,iphone</cc:SearchPaths>
+        </cc:DesignResolution>
+        <cc:DesignResolution Id="ipad" Width="768" Height="1024" Policy="NoBorder" Descr="non retina iPad">
+            <cc:SearchPaths>ipad,iphonehd5,iphonehd,iphone</cc:SearchPaths>
+        </cc:DesignResolution>
+        <cc:DesignResolution Id="iphonehd5" Width="640" Height="1136" Policy="NoBorder" Descr="retina iPhone (5 and 5S)">
+            <cc:SearchPaths>iphonehd5,iphonehd,iphone</cc:SearchPaths>
+        </cc:DesignResolution>
+        <cc:DesignResolution Id="iphonehd" Width="640" Height="960" Policy="NoBorder" Descr="retina iPhone (4 and 4S)">
+            <cc:SearchPaths>iphonehd,iphone</cc:SearchPaths>
+        </cc:DesignResolution>
+        <cc:DesignResolution Id="iphone" Width="320" Height="480" Policy="NoBorder" Descr="non retina iPhone">
+            <cc:SearchPaths>iphone</cc:SearchPaths>
+        </cc:DesignResolution>
+    </cc:GLView>
+    <cc:SceneMap RootPath="$(SearchPaths)" RunWithScene="MainMenuScreen">
+        <cc:Scene Id="MainMenuScreen" Descr="" Config="MainMenuScreenConfig.xml"/>
+        <cc:Scene Id="PlayGameScreen" Descr="" Config="PlayGameScreenConfig.xml"/>
+        <cc:Scene Id="GameOverScreen" Descr="" Config="GameOverScreenConfig.xml"/>
+        <cc:Scene Id="ShopScreen" Descr="" Config="ShopScreenConfig.xml"/>
+        <cc:Scene Id="PauseScreen" Descr="" Config="PauseScreenConfig.xml"/>
+    </cc:SceneMap>
+</cc:Application>
